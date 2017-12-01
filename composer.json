@@ -1,0 +1,30 @@
+{
+    "name": "mattjmattj/phaas",
+    "description": "A dead simple PHP FaaS",
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^3.9@stable",
+        "wikimedia/composer-merge-plugin": "^1.4@stable"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Jouan",
+            "email": "matthias.jouan@gmail.com"
+        }
+    ],
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "functions/*/composer.json"
+            ],
+            "recurse": false,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": false,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
+        }
+    }
+}

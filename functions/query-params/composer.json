@@ -1,0 +1,5 @@
+{
+    "require": {
+        "lstrojny/functional-php": "~1.0"
+    }
+}
